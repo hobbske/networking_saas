@@ -15,9 +15,11 @@ end
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-
-# Add Autoprefixer to add browser vendor prefixes automatically
+# Use Font Awesome Library for Icons
+gem 'font-awesome-sass', '~> 4.6.2'
+# Add Autoprefixer to add browser vendor prefixes automatically to bootstrap
 gem 'autoprefixer-rails', '~> 6.5', '>= 6.5.1'
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
