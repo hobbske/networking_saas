@@ -11,10 +11,13 @@ group :producton do
 	gem 'rails_12factor'
 end
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
 # Use bootstrap for general stylings
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+
+# Add Autoprefixer to add browser vendor prefixes automatically
+gem 'autoprefixer-rails', '~> 6.5', '>= 6.5.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
