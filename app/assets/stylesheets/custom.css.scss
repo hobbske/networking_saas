@@ -5,10 +5,26 @@
 @import "font-awesome";
 
 
-.theme-bg {
+.brand-nav {
 	
-	background: #FF8008; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #FF8008 , #FFC837); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #FF8008 , #FFC837); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: rgba(66, 134, 244,1); /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, rgba(66, 134, 244,1) , rgba(131, 177, 252,1)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, rgba(66, 134, 244,1) , rgba(131, 177, 252,1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
+}
+
+.navbar-inverse .navbar-brand{
+    color: white;
+}
+
+.navbar-inverse:hover .navbar-brand:hover{
+    color: navy;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: navy;
 }
