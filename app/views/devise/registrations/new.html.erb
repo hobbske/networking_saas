@@ -1,8 +1,11 @@
 <div class="row">
+
   <div class="col-md-6 col-md-offset-3 brand">
-    
-      <h2 class="text-center"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</h2>
-    
+    <% if params[:plan] == '2' %>
+      <h2 class="text-center"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up for <strong>Premium Access</strong></h2>
+    <% else %>
+      <h2 class="text-center"><i class="fa fa-user-plus" aria-hidden="true"></i> Register for <strong>Basic Access</strong></h2>
+    <% end %>
   </div>
 </div>
 
