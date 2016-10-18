@@ -25,10 +25,23 @@
 
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <div class="nav navbar-nav navbar-right">
+
+        <% if current_user %>
+          <%= link_to "Logout", destroy_user_session_path, class: 'btn btn-nav navbar-btn', method: :delete %>
+        <% else %>
+          <%= link_to "Login", new_user_session_path, class: 'btn btn-nav navbar-btn', method: :get %>
+          <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-nav navbar-btn', method: :get %>
+        <% end %>
+
+      </div>
+
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About Us", about_path %></li>
-        <li><%= link_to "Contact Us", new_contact_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Feedback", new_contact_path %></li>
+        <li role="separator" class="divider"></li>      
       </ul>
+      
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
