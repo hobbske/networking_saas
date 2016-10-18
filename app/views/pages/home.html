@@ -10,7 +10,7 @@
 			<h4 class="text-center">Register and browse the community for free.</h4>
 			<br>
 			<br>
-			<%= link_to 'Register for Basic', new_user_registration_path, class: 'btn btn-lg btn-block brand-btn' %>
+			<%= link_to 'Register for Basic', new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-lg btn-block brand-btn' %>
 		</div>
 	</div>
 	<div class="col-md-6">
@@ -18,7 +18,7 @@
 			<h2 class="text-center"><strong>Pro Plan</strong></h2>
 			<h4 class="text-center">Sign up and connect with the person who will help you succeed.</h4>
 			<br>
-			<%= link_to 'Sign up for Pro', new_user_registration_path, class: 'btn btn-lg btn-block brand-btn' %>
+			<%= link_to 'Sign up for Pro', new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-lg btn-block brand-btn' %>
 		</div>
 	</div>
 </div>
