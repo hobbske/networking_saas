@@ -10,6 +10,7 @@ body {
     line-height: 1.1;
     color: inherit;
     letter-spacing: 2px;
+    background-image: image-url('homepage_img.jpg');
 }
 
 .brand {
@@ -47,7 +48,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(131, 177, 252,1);
-    color: rgba(131, 177, 252,1);
+    color: navy;
     padding: 5px;
     text-align: center;
     text-decoration: none;
@@ -128,7 +129,7 @@ label {
 }
 
 .jumbotron {
-    background: rgba(131, 177, 252,1); 
+    background: rgba(131, 177, 252,.5); 
     color: white;
     font-family: inherit;
     font-weight: 200;
