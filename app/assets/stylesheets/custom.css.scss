@@ -4,12 +4,67 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+body {
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    color: inherit;
+    letter-spacing: 2px;
+}
+
+.brand {
+	background: rgba(131, 177, 252,1);
+	color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.brand > h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    color: inherit;
+    letter-spacing: 2px;
+}
+
+.brand-btn {
+    background-color: rgba(131, 177, 252,1); /* light blue */
+    border: rgba(255,255,255,1);
+    color: rgba(255,255,255,1);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.brand-btn:hover {
+    background-color: rgba(66, 134, 244,1); /* light blue */
+    border-color: rgba(131, 177, 252,1);
+    color: rgba(255,255,255,1);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
 
 .brand-nav {
 	
 	background: rgba(66, 134, 244,1); /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, rgba(66, 134, 244,1) , rgba(131, 177, 252,1)); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, rgba(66, 134, 244,1) , rgba(131, 177, 252,1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-weight: 200;
+	letter-spacing: 2px;
         
 }
 
@@ -28,3 +83,15 @@
 .navbar-inverse .navbar-nav > li > a:hover {
     color: navy;
 }
+
+.jumbotron {
+    background: rgba(131, 177, 252,1); 
+    color: white;
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    letter-spacing: 2px;
+
+}
+
+
