@@ -13,6 +13,7 @@
   <div class="col-md-6 col-md-offset-3 well">
     
     <% if params[:plan] == '2' %>
+<<<<<<< HEAD
 
       <%= render "pro_form" %>
 
@@ -21,11 +22,22 @@
       <%= render "basic_form" %>
       
     <% end %> 
+=======
+      <%= render "pro_form" %>
+    <% else %>
+      <%= render "basic_form" %>
+    <% end %>
+    
+>>>>>>> development
 
     <br>
  
 
       <%= render "devise/shared/links" %>
+      <i class="fa fa-chevron-circle-left" aria-hidden="true">
+        <%= link_to "Back", root_path %>
+      </i>
+
 
 
   </div>

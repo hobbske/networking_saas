@@ -4,6 +4,12 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+.alert-notice {
+    color: rgba(66, 134, 244,1);
+    background-color: rgba(255, 255, 255,.7); /* white */
+    border-color: rgba(66, 134, 244,1);
+}
+
 body {
     font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif;
     font-weight: 200;
