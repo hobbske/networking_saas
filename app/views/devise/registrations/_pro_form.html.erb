@@ -7,17 +7,11 @@
 </div>
 
 
-<<<<<<< HEAD
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-=======
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {id: 'pro_form'}) do |f| %>
   <%= devise_error_messages! %>
 
   <%= hidden_field_tag 'plan', params[:plan] %>
 
->>>>>>> development
   <div class="form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, class: 'form-control' %>
@@ -48,20 +42,11 @@
 
   <div class="form-group">
     <%= label_tag :card_month, "Card Expiration" %>
-<<<<<<< HEAD
-    <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
-    <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit 'Sign up', class: 'btn btn-sm brand-btn' %>
-=======
     <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
     <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"}%>
   </div>
 
   <div class="actions form-group">
     <%= f.submit 'Submit', class: 'btn btn-sm brand-btn', id: 'form-submit-btn' %>
->>>>>>> development
   </div>
 <% end %>
