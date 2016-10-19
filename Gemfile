@@ -11,6 +11,8 @@ group :producton do
 	gem 'rails_12factor'
 end
 
+
+
 # Use bootstrap for general stylings
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Use SCSS for stylesheets
@@ -34,17 +36,22 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# gem 'bcrypt', '~> 3.1.11'
+
+# gem 'mime-types', '~> 3.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+
+gem 'unf_ext', '~> 0.0.7.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -62,8 +69,10 @@ group :development do
   gem 'spring'
 
 end
-
+# Use Devise for user authentication and authorization
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
-
-
+# Use Stripe for credit card payment processing
+gem 'stripe', '~> 1.55'
+# Use figaro to hide secret keys
+gem 'figaro', '~> 1.1', '>= 1.1.1'
