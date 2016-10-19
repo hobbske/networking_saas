@@ -15,3 +15,6 @@
 //= require jquery_ujs
 //= require_tree .
 
+setTimeout(function() {
+    $('.alert-notice').fadeOut('fast');
+}, 6000);
